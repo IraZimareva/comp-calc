@@ -21,7 +21,7 @@ public class User {
     private String secondname;
     @Enumerated(EnumType.STRING)
     private GenderEnum gender;
-    @Temporal(TemporalType.DATE)
+//    @Temporal(TemporalType.DATE)
     private LocalDate dateOfBirth;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "city_id")
@@ -39,6 +39,13 @@ public class User {
     private List<UserCompetition> userCompetitionList = new ArrayList<>();
 
     public User() {
+    }
+
+    public User(String lastname, String firstname, String secondname, City city) {
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.secondname = secondname;
+        this.city = city;
     }
 
     public Long getId() {

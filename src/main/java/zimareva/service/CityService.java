@@ -40,7 +40,6 @@ public class CityService {
         cityRepository.deleteById(id);
     }
 
-    //todo:Не сохраняется же в бд! Переделать
     //todo: прочитать про  transactional
     @Transactional
     public City editCity(Long id, City city){

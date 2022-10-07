@@ -15,7 +15,7 @@ public class Competition {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String title;
-    @Temporal(TemporalType.DATE)
+//    @Temporal(TemporalType.DATE)
     private LocalDate startDate;
     private Integer daysCount;
     @ManyToOne(fetch = FetchType.EAGER)

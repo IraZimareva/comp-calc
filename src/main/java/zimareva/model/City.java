@@ -34,6 +34,10 @@ public class City {
     public City() {
     }
 
+    public City(String title) {
+        this.title = title;
+    }
+
     public Long getId() {
         return id;
     }
