@@ -48,6 +48,18 @@ public class User {
         this.city = city;
     }
 
+    public User(String lastname, String firstname, String secondname, GenderEnum gender, LocalDate dateOfBirth, City city, RangEnum rang, String mobilePhone, String email) {
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.secondname = secondname;
+        this.gender = gender;
+        this.dateOfBirth = dateOfBirth;
+        this.city = city;
+        this.rang = rang;
+        this.mobilePhone = mobilePhone;
+        this.email = email;
+    }
+
     public Long getId() {
         return id;
     }
