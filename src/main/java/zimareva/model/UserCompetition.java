@@ -25,6 +25,11 @@ public class UserCompetition {
     public UserCompetition() {
     }
 
+    public UserCompetition(Competition competition, User user) {
+        this.competition = competition;
+        this.user = user;
+    }
+
     public Competition getCompetition() {
         return competition;
     }

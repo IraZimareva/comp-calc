@@ -147,4 +147,12 @@ public class User {
     public void setUserCompetitionList(List<UserCompetition> userCompetitionList) {
         this.userCompetitionList = userCompetitionList;
     }
+
+    public void addUserCompetitionRelationship(UserCompetition userCompetition){
+        userCompetitionList.add(userCompetition);
+    }
+
+    public void deleteUserCompetitionRelationship(UserCompetition userCompetition){
+        userCompetitionList.remove(userCompetition);
+    }
 }

@@ -39,6 +39,13 @@ public class Competition {
     public Competition() {
     }
 
+    public Competition(String title, LocalDate startDate, Integer daysCount, City city) {
+        this.title = title;
+        this.startDate = startDate;
+        this.daysCount = daysCount;
+        this.city = city;
+    }
+
     public Long getId() {
         return id;
     }
@@ -93,5 +100,13 @@ public class Competition {
 
     public void setUserCompetitionList(List<UserCompetition> userCompetitionList) {
         this.userCompetitionList = userCompetitionList;
+    }
+
+    public void addUserCompetitionRelationship(UserCompetition userCompetition){
+        userCompetitionList.add(userCompetition);
+    }
+
+    public void deleteUserCompetitionRelationship(UserCompetition userCompetition){
+        userCompetitionList.remove(userCompetition);
     }
 }

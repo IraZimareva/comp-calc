@@ -8,6 +8,7 @@ import zimareva.model.User;
 import zimareva.service.UserService;
 
 @RestController
+@RequestMapping("/users")
 public class UserController {
 
     private final UserService userService;

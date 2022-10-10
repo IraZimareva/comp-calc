@@ -36,4 +36,8 @@ public class CompetitionService {
         competitionToEdit.setCity(competition.getCity());
         return competitionToEdit;
     }
+
+    /*public void addUserCompetitionRelationshipToCompetition(Competition competition, UserCompetition userCompetition){
+        competition.addUserCompetitionRelationship(userCompetition);
+    }*/
 }
